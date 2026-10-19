@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: black;
+    color: white;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: blue;
+    border-bottom: 1px solid #222;
+}
+
+.logo {
+   width: 120px;
+   height: auto;
+}
+
+.logo span,
+.hero h1 span {
+    color: #6658d3;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links a:hover {
+    color: #6658d3;
+}
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: #04040e;
+}
+
+.tagline,
+.category {
+    color: #6658d3;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.hero h1 {
+    font-size: clamp(36px, 6vw, 58px);
+    margin: 15px 0;
+}
+
+.intro {
+    max-width: 520px;
+    margin: 0 auto 28px;
+    color: #5b6475;
+}
+
+.read-button {
+    display: inline-block;
+    background: #6658d3;
+    color: white;
+    padding: 13px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.read-button:hover {
+    background: #5042b5;
+}
+
+.articles {
+    padding: 70px 8%;
+    background-color: blue;
+}
+
+.articles > h2,
+.section-intro {
+    text-align: center;
+}
+
+.section-intro {
+    color: #687386;
+    margin: 8px 0 35px;
+}
+
+.article-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.article-card {
+    background: white;
+    padding: 25px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    transition: transform 0.2s;
+}
+
+.article-card:hover {
+    transform: translateY(-5px);
+}
+
+.article-card h3 {
+    margin: 12px 0;
+}
+
+.article-card p:not(.category) {
+    color: #687386;
+    margin-bottom: 18px;
+}
+
+.article-card a {
+    color: #6658d3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.about {
+    background: white;
+    text-align: center;
+    padding: 55px 20px;
+    color: gray;
+}
+
+.about p {
+    max-width: 500px;
+    margin: 12px auto 0;
+    color: #687386;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #687386;
+    font-size: 14px;
+}
+
+@media (max-width: 700px) {
+    .navbar {
+        padding: 18px 5%;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .article-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding: 75px 20px;
+    }
+
+    .articles {
+        padding: 55px 5%;
+    }
+}
