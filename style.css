@@ -31,7 +31,7 @@ body {
 
 .logo span,
 .hero h1 span {
-    color: #6658d3;
+    color: #6C5CE7;
 }
 
 .nav-links {
@@ -64,6 +64,7 @@ body {
 .hero h1 {
     font-size: clamp(36px, 6vw, 58px);
     margin: 15px 0;
+    color: #12113A;
 }
 
 .intro {
